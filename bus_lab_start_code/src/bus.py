@@ -8,3 +8,6 @@ class Bus:
 
     def passenger_count(self):
         return len(self.passengers)
+
+    def pick_up(self, new_passenger):
+        self.passengers.append(new_passenger)
