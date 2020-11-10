@@ -20,7 +20,7 @@ class TestBusStop(unittest.TestCase):
         self.bus_stop.add_to_queue(self.person)
         self.assertEqual(1, self.bus_stop.queue_length())
 
-    @unittest.skip("Delete this line to run the test")
+    #@unittest.skip("Delete this line to run the test")
     def test_can_clear_queue(self):
         self.bus_stop.add_to_queue(self.person)
         self.bus_stop.clear()
