@@ -21,4 +21,4 @@ class Bus:
     def pick_up_from_stop(self, bus_stop):
         while len(bus_stop.queue) != 0:
             self.pick_up(bus_stop.queue[0])
-            bus_stop.remove_from_queue()
+            bus_stop.remove_from_queue(bus_stop.queue[0])
